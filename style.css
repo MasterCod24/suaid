@@ -497,6 +497,6 @@ textarea::placeholder{
     color: #277bcf;
 }
 
-textarea:focus::placeholder{ /* AL CLICK DEL MOUSE TRANSFORMA PLACEHOLDER*/
+textarea:focus::placeholder{ /* AL CLICK DEL MOUSE CAMBIA PLACEHOLDER*/
     color: #212428;
 }
