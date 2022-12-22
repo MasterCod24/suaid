@@ -482,4 +482,21 @@ textarea{
     color: #c4cfde;
     box-shadow: 0 0 15px #5c646f;
     padding: 2em 2%;
+    transition: 300ms linear;
+}
+
+textarea:focus{ /* AL CLICK DEL MOUSE */
+    transition: .3s linear;
+    background-color: #9facc0;
+    border-color: #277bcf;
+    color: #212428;
+    box-shadow: 0 0 15px #277bcf;
+}
+
+textarea::placeholder{ 
+    color: #277bcf;
+}
+
+textarea:focus::placeholder{ /* AL CLICK DEL MOUSE TRANSFORMA PLACEHOLDER*/
+    color: #212428;
 }
