@@ -10,6 +10,16 @@
     color: white;
 }
 
+* > strong{
+    color: #277bcf;
+    letter-spacing: 0.5px;
+    font-family: 'Archivo Black', sans-serif;    
+}
+
+* > i{ /* tutto ciò che è utile ma non si deve vedere */
+    color: #212428;
+}
+
 body{
     background-color: #212428;
 }
@@ -211,6 +221,28 @@ main{
     font-weight: 600;
 }
 
+/* TITOLO NON VEDENTI */
+
+.t_1{
+    padding: 0em 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.immagine{
+    background: url(../img/background_limit.jpg) top center fixed;
+    padding: 6em 17%;
+}
+
+.no_visive > p{
+    font-family: 'Cairo', sans-serif;
+    color: #277bcf;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
 /* PRIMO BLOCCO DESCRIZIONE */
 
 .descr{
@@ -235,11 +267,64 @@ main{
 
 /* SECONDO BLOCCO */
 
-.separatore{
-    padding: 1em 8%;
+.n_ved{
+    padding: 2em 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.separatore > p{
+.n_ved > img{
+    height: 300px;
+    border-radius: 5px;
+    margin-left: -30px;
+    margin-right: 90px;
+    box-shadow: 0 0 30px #3c4149;
+}
+
+.n_ved > p{
+    padding: 3em 2%;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    margin-right: -40px;
+    letter-spacing: 1.5px;
+}
+
+/* TERZO BLOCCO */
+
+.alfabeto_braille{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 8%;
+}
+
+.a_braille{ /* 1° PARTE DEL 3° BLOCCO */
+    margin-left: -30px;
+    width: 50%;
+    height: 200px;
+}
+
+.a_braille > p{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+.a_braille > .t_braille{
     text-align: center;
+    text-transform: uppercase;
     color: #277bcf;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.alfabeto_braille > img{ /* 2° PARTE DEL 3° BLOCCO */
+    height: 250px;
+    box-shadow: 0 0 30px #3c4149;
 }
