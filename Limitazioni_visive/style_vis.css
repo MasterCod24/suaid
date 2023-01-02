@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
 
 *{
     margin: 0;
@@ -231,8 +232,11 @@ main{
 }
 
 .immagine{
-    background: url(../img/background_limit.jpg) top center fixed;
+    background: linear-gradient(rgba(33, 36, 40, 0.400),
+    rgba(33, 36, 40, 0.400)), 
+    url(../img/background_limit.jpg) center fixed;
     padding: 6em 17%;
+    filter: blur(4px);
 }
 
 .no_visive > p{
@@ -327,4 +331,205 @@ main{
 .alfabeto_braille > img{ /* 2° PARTE DEL 3° BLOCCO */
     height: 250px;
     box-shadow: 0 0 30px #3c4149;
+    border-radius: 5px;
+}
+
+/* QUARTO BLOCCO (uguale al primo, cambia immagine) */
+
+.display_braille{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 8%;
+}
+
+.display_braille > img{ /* 2° PARTE DEL 3° BLOCCO */
+    height: 350px;
+    box-shadow: 0 0 30px #3c4149;
+    border-radius: 5px;
+}
+
+/* TITOLO IPOVEDENTI */
+
+.t_2{
+    padding: 2em 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.immagine_2{
+    background: url(../img/background_limit_2.jpg) top center fixed;
+    padding: 6em 18.5%;
+    filter: blur(1px);
+    background-repeat: no-repeat;
+}
+
+.ipo_visive > p{
+    font-family: 'Cairo', sans-serif;
+    color: #277bcf;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* il quinto blocco è uguale al secondo quindi
+ cambio il contenuto ma non lo stile */
+
+ 
+/* 1° PARTE DELL ULTIMO BLOCCO */
+
+.ipo_description_1{
+    padding: 2em 10%;
+    text-align: justify;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+.ipo_description_1 > p{
+    padding: 0.5em;
+    margin-top: 2px;
+    border: 2px solid #277bcf;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top: none;
+    border-right: none;
+}
+
+.ipo_description_1::before{
+    content: '1';
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    padding: 3px 10px;
+    margin-left: -18px;
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: #277bcf;
+    filter: blur(0.2px);
+}
+
+/* 2° PARTE DELL ULTIMO BLOCCO */
+
+.ipo_description_2{
+    padding: 2em 10%;
+    text-align: justify;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+.ipo_description_2 > p{
+    padding: 0.5em;
+    margin-top: 2px;
+    border: 2px solid #277bcf;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.ipo_description_2::before{
+    content: '2';
+
+    text-align: right;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    padding: 3px 10px;
+    margin-left: 98.35%;
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: #277bcf;
+    filter: blur(0.2px);
+}
+
+/* FOOTER */
+
+footer{
+    padding: 7em 5%;
+}
+
+/* FOOTER BLOCK */
+
+.footer__block{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 5%;
+    margin-top: -80px;
+    margin-bottom: -90px;
+    border: 2px solid #212428;
+    border-radius: 20px;
+    border-top-color: #277bcf;
+    border-bottom-color: #277bcf; 
+}
+
+.about_text{
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-weight: 600;
+    color: #c4cfde;
+    line-height: 25px;
+    margin: 0%;
+}
+
+.contact > p{
+    line-height: 50px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact{
+    margin-top: -13px;
+}
+
+/* TITOLI */
+
+.footer__block > .contact > .title, .comment > .title, .about__us > .title{
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #c4cfde;
+    margin-bottom: 20px;
+}
+
+/* LOGO CONTATTI */
+
+.contact > p > a > img{
+    height: 40px;
+}
+
+/* TEXTAREA */
+
+textarea{
+    border-radius: 4px;
+    border: none;
+    background-color: #1e2024;
+    color: #c4cfde;
+    box-shadow: 0 0 15px #5c646f;
+    padding: 2em 2%;
+    transition: 300ms linear;
+}
+
+textarea:focus{ /* AL CLICK DEL MOUSE */
+    transition: .3s linear;
+    background-color: #9facc0;
+    border-color: #277bcf;
+    color: #212428;
+    box-shadow: 0 0 15px #277bcf;
+}
+
+textarea::placeholder{ 
+    color: #277bcf;
+}
+
+textarea:focus::placeholder{ /* AL CLICK DEL MOUSE TRANSFORMA PLACEHOLDER*/
+    color: #212428;
 }
