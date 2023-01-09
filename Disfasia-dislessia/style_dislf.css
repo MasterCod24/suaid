@@ -10,6 +10,12 @@
     color: white;
 }
 
+* > strong{
+    color: #277bcf;
+    letter-spacing: 0.5px;
+    font-family: 'Archivo Black', sans-serif;    
+}
+
 body{
     background-color: #212428;
 }
@@ -242,4 +248,104 @@ main{
 .separatore > p{
     text-align: center;
     color: #277bcf;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 7em 5%;
+}
+
+/* FOOTER BLOCK */
+
+.footer__block{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 5%;
+    margin-top: -80px;
+    margin-bottom: -90px;
+    border: 2px solid #212428;
+    border-radius: 20px;
+    border-top-color: #277bcf;
+    border-bottom-color: #277bcf; 
+}
+
+.about_text{
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-weight: 600;
+    color: #c4cfde;
+    line-height: 30px;
+    margin: 0%;
+}
+
+.about__us{
+    padding: 1em 2%;
+    margin-left: 80px;
+}
+
+.comment{
+    margin-top: 16px;
+    margin-left: 200px;
+    padding: 0em;
+}
+
+.contact > p{
+    line-height: 50px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    width: 300px;
+}
+
+.contact{
+    margin-top: 8px;
+    margin-right: -100px;
+    padding-bottom: -10;
+}
+
+/* TITOLI */
+
+.footer__block > .contact > .title, .comment > .title, .about__us > .title{
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #c4cfde;
+    margin-bottom: 20px;
+}
+
+/* LOGO CONTATTI */
+
+.contact > p > a > img{
+    height: 40px;
+}
+
+/* TEXTAREA */
+
+textarea{
+    border-radius: 4px;
+    border: none;
+    background-color: #1e2024;
+    color: #c4cfde;
+    box-shadow: 0 0 15px #5c646f;
+    padding: 2em 2%;
+    transition: 300ms linear;
+}
+
+textarea:focus{ /* AL CLICK DEL MOUSE */
+    transition: .3s linear;
+    background-color: #9facc0;
+    border-color: #277bcf;
+    color: #212428;
+    box-shadow: 0 0 15px #277bcf;
+}
+
+textarea::placeholder{ 
+    color: #277bcf;
+}
+
+textarea:focus::placeholder{ /* AL CLICK DEL MOUSE TRANSFORMA PLACEHOLDER*/
+    color: #212428;
 }

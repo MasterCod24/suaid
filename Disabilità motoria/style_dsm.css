@@ -400,18 +400,32 @@ footer{
     text-align: justify;
     font-weight: 600;
     color: #c4cfde;
-    line-height: 25px;
+    line-height: 30px;
     margin: 0%;
+}
+
+.about__us{
+    padding: 1em 2%;
+    margin-left: 80px;
+}
+
+.comment{
+    margin-top: 16px;
+    margin-left: 200px;
+    padding: 0em;
 }
 
 .contact > p{
     line-height: 50px;
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
+    width: 300px;
 }
 
 .contact{
-    margin-top: -13px;
+    margin-top: 8px;
+    margin-right: -100px;
+    padding-bottom: -10;
 }
 
 /* TITOLI */
